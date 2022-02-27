@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+  app:
+    image: nivedhan/chainbrain:latest
+    command: bash -c "rake db:reset && rails server -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/chainbrain
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db

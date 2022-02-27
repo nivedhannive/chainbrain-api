@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 10
+
+development:
+  <<: *default
+  database: chainbrain
+  username: postgres
+  password: password
+  host: db
+  port: 5432
+
+
+local:
+  <<: *default
+  database: postgres
+  username: ''
+  password: ''
+  host: localhost
+  port: 5432
+
