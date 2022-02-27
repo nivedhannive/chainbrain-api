@@ -67,12 +67,12 @@ https://documenter.getpostman.com/view/19782404/UVkqquJj
   
     *docker push nivedhan/chainbrain:latest*
 
-3. Once docker image is ready, we can initiate the container using docker compose file
+3. Once docker image is ready, we can initiate the container using docker-compose.yml file
 
     *docker-compose pull && docker-compose up -d*
 
-*docker-compose pull*   - This command is to pull latest image from repository
-*docker-compose up -d*  - To start the containers
+1. *docker-compose pull*   - This command is to pull latest image from repository
+2. *docker-compose up -d*  - To start the containers
 
 
 docker-compose.yml file has two services, one for database and other is our application.  
