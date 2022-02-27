@@ -16,7 +16,7 @@ class DataUploaderService
     FileDatum.transaction do
       (data - processed_data).each do |datum|
         sleep 1
-        file.data.create(name: datum, email: "#{datum}@chainbrain.com") if can_upload?
+        file.data.create(name: datum, email: "#{datum.downcase}@chainbrain.com") if can_upload?
         raise ActiveRecord::Rollback if status == 'STOPPED'
         raise ActiveRecord::RecordInvalid if status == 'KILLED'
       end
