@@ -15,7 +15,7 @@ class DataUploaderService
     processed_data = file.data.pluck(:name)
     FileDatum.transaction do
       (data - processed_data).each do |datum|
-        sleep 1
+        sleep 0.5
         file.data.create(name: datum, email: "#{datum.downcase}@chainbrain.com") if can_upload?
         raise ActiveRecord::Rollback if status == 'STOPPED'
         raise ActiveRecord::RecordInvalid if status == 'KILLED'
