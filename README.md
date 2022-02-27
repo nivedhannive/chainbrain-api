@@ -75,7 +75,21 @@ https://documenter.getpostman.com/view/19782404/UVkqquJj
 2. *docker-compose up -d*  - To start the containers
 
 
-docker-compose.yml file has two services, one for database and other is our application.  
+docker-compose.yml file has two services, one for database and other is our application. 
+
+
+# How to build docker image and create container in local
+![image](https://user-images.githubusercontent.com/42088074/155877117-10fcebc5-5050-491f-a49a-c02eaa2630b8.png)
+![image](https://user-images.githubusercontent.com/42088074/155877160-341d0531-88f1-490d-ae21-6f4981054fb9.png)
+![image](https://user-images.githubusercontent.com/42088074/155877176-5e92bf45-db3e-4287-b163-0d987571186b.png)
+![image](https://user-images.githubusercontent.com/42088074/155877195-f399c893-0a5f-49ee-9d40-56a65b18c137.png)
+
+# Container initiated
+![image](https://user-images.githubusercontent.com/42088074/155877238-25928950-d25e-4283-b0a4-1be055e4a856.png)
+
+
+
+ 
 
 
 
